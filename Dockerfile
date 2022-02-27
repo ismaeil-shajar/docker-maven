@@ -1,5 +1,5 @@
-LABEL org.opencontainers.image.source https://github.com/ismaeil-shajar/docker-maven
 FROM openjdk:17-jdk-alpine
+LABEL org.opencontainers.image.source="https://github.com/ismaeil-shajar/docker-maven"
 RUN addgroup -S spring && adduser -S spring -G spring
 USER spring:spring
 WORKDIR /app
