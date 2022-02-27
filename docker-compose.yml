@@ -1,0 +1,17 @@
+version: '2'
+services:
+  spring:
+    container_name: spring
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: spring-docker
+    ports:
+      - 8080:8090
+    env_file:
+      - .env
+    networks:
+      - spring-network
+networks:
+  spring-network:
+    driver: bridge
