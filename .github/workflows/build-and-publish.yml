@@ -49,8 +49,8 @@ jobs:
         context: ./
         # Note: tags has to be all lower-case
         tags: |
-          ismaeilshajar/spring-docker:17-alpine-latest 
-          ghcr.io/ismaeil-shajar/spring-docker:17-alpine-latest
+          ${{ secrets.DOCKER_HUB_USERNAME }}/spring-docker:17-alpine-latest 
+          ghcr.io/${{ github.actor }}/spring-docker:17-alpine-latest
         # build on feature branches, push only on main branch
         push: ${{ github.ref == 'refs/heads/main' }}
     - name: Image digest
