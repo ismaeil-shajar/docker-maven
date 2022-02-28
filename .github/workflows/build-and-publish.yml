@@ -2,9 +2,9 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ main ]       
+    branches: [ docker-aws-ecr ]       
   pull_request:
-    branches: [ main ]
+    branches: [ docker-aws-ecr ]
 env:
   AWS_REGION: ecr_shajar                
   ECR_REPOSITORY: ecr_shajar
