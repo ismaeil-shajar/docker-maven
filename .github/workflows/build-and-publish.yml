@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ docker-aws-ecr ]
 env:
-  AWS_REGION: ecr_shajar                
+  AWS_REGION: us-east-1                
   ECR_REPOSITORY: ecr_shajar
 
 
